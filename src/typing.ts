@@ -1,5 +1,8 @@
-export interface LessCopyOptions{
+import type { FilterPattern } from '@rollup/pluginutils'
+
+export interface ConfigOptions{
   root?: string
   entry?: string
-  exclude?: string[]
+  exclude?: FilterPattern
+  include?: FilterPattern
 }
