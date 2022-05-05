@@ -17,7 +17,7 @@ const copyFiles = (_opt?: ConfigOptions): PluginOption => {
     enforce: 'pre',
     apply: 'build',
     configResolved: (config) => {
-      root = config.root || process.cwd()
+      root = _opt?.root || config.root || process.cwd()
       sourceDir = normalizePath(resolve(root, entry))
     },
     transform(code: string, id: string) {
