@@ -3,7 +3,10 @@ export default defineBuildConfig({
   entries: [
     'src/index',
   ],
-  externals: [],
+  externals: [
+    'vite',
+    '@rollup/pluginutils',
+  ],
   declaration: true,
   rollup: {
     emitCJS: true,
