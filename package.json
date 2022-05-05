@@ -35,7 +35,8 @@
     "build": "unbuild",
     "stub": "unbuild --stub",
     "playground": "vite playground",
-    "playground:build": "vite build playground"
+    "playground:build": "vite build playground",
+    "changelog":"changelogen"
   },
   "bugs": {
     "url": "https://github.com/mistjs/vite-plugin-starter/issues"
