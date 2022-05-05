@@ -60,7 +60,7 @@
     "vitest": "^0.9.4",
     "vue": "^3.2.33"
   },
-  "peerDependencies": {
+  "dependencies": {
     "vite": "^2.9.8",
     "@rollup/pluginutils": "^4.2.1"
   },
