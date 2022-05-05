@@ -1,6 +1,7 @@
 {
   "name": "vite-plugin-copy-files",
   "version": "1.0.0",
+  "packageManager": "pnpm@7.0.0",
   "description": "this is vite plugin template",
   "keywords": [
     "vite-plugin",
@@ -26,7 +27,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@7.0.0",
   "scripts": {
     "prepare": "husky install",
     "test": "vitest",
@@ -57,7 +57,7 @@
     "vue": "^3.2.33"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,vue}": "eslint . --fix"
+    "*.{ts,tsx,js,vue}": "eslint --fix --ext .ts,.tsx,.js,.vue"
   },
   "homepage": "https://github.com/mistjs/vite-plugin-starter#readme"
 }
