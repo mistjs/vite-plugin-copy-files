@@ -30,10 +30,12 @@
   "scripts": {
     "prepare": "husky install",
     "test": "vitest",
+    "test:u": "vitest -u",
     "test:run": "vitest run",
     "build": "unbuild",
     "stub": "unbuild --stub",
-    "playground": "vite playground"
+    "playground": "vite playground",
+    "playground:build": "vite build playground"
   },
   "bugs": {
     "url": "https://github.com/mistjs/vite-plugin-starter/issues"
@@ -48,8 +50,10 @@
     "@vitejs/plugin-vue-jsx": "^1.3.10",
     "eslint": "^8.13.0",
     "husky": "^7.0.4",
+    "less": "^4.1.2",
     "lint-staged": "^12.3.8",
     "magic-string": "^0.26.1",
+    "sass": "^1.51.0",
     "typescript": "^4.6.3",
     "unbuild": "^0.7.4",
     "vite": "^2.9.5",
