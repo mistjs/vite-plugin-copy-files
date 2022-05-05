@@ -9,9 +9,6 @@ export default defineConfig({
     vueJsx(),
     copyFiles(),
   ],
-  alias: {
-    '@': '.',
-  },
   build: {
     lib: {
       entry: resolve(__dirname, './src/index.ts'),
