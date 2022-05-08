@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-copy-files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "pnpm@7.0.0",
   "description": "this is vite plugin template",
   "keywords": [
