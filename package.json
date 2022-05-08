@@ -1,8 +1,8 @@
 {
   "name": "vite-plugin-copy-files",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "packageManager": "pnpm@7.0.0",
-  "description": "this is vite plugin template",
+  "description": "This package can help you move some files that do not need to be packaged to the corresponding packaging directory",
   "keywords": [
     "vite-plugin",
     "vite"
@@ -11,7 +11,7 @@
   "author": "aibayanyu",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mistjs/vite-plugin-starter.git"
+    "url": "git+https://github.com/mistjs/vite-plugin-copy-files.git"
   },
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -39,7 +39,7 @@
     "changelog": "npx changelogen"
   },
   "bugs": {
-    "url": "https://github.com/mistjs/vite-plugin-starter/issues"
+    "url": "https://github.com/mistjs/vite-plugin-copy-files/issues"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
@@ -67,5 +67,5 @@
   "lint-staged": {
     "*.{ts,tsx,js,vue}": "eslint --fix --ext .ts,.tsx,.js,.vue"
   },
-  "homepage": "https://github.com/mistjs/vite-plugin-starter#readme"
+  "homepage": "https://github.com/mistjs/vite-plugin-copy-files#readme"
 }
