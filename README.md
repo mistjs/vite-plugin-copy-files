@@ -23,9 +23,9 @@ Add the following to your `.vite.config.js` or `.vite.config.ts` file:
 import copyFiles from 'vite-plugin-copy-files'
 export default {
   plugins: [copyFiles({
-      include:[/\.(less|css|scss)$/],
-      exclde:[/node_modules/],
-  })]
+    include: [/\.(less|css|scss)$/],
+    exclde: [/node_modules/],
+  })],
 }
 ```
 
@@ -56,3 +56,8 @@ export default {
 - `String`: The entry directory to copy files from.
 
 * default: `src` if you directory is not named `src` you need to specify the entry directory.
+
+
+### formatFilePath
+
+  - `Function`: A custom file output path Function. `(file:string)=>string`

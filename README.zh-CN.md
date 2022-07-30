@@ -23,9 +23,9 @@ yarn add -D vite-plugin-copy-files
 import copyFiles from 'vite-plugin-copy-files'
 export default {
   plugins: [copyFiles({
-      include:[/\.(less|css|scss)$/],
-      exclde:[/node_modules/],
-  })]
+    include: [/\.(less|css|scss)$/],
+    exclde: [/node_modules/],
+  })],
 }
 ```
 
@@ -47,3 +47,8 @@ export default {
 ### entry
 
 - `String`: 设置需要复制文件的目录，默认为`src`；如果您的默认目录不是`src`，请根据需要自行调整。
+
+
+### formatFilePath
+
+- `Function`: 自定义文件输出地址
