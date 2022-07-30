@@ -7,7 +7,11 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    copyFiles(),
+    copyFiles({
+      formatFilePath(file) {
+        return file.replace('styles', 'assets')
+      },
+    }),
   ],
   build: {
     lib: {

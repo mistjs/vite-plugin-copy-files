@@ -5,4 +5,5 @@ export interface ConfigOptions{
   entry?: string
   exclude?: FilterPattern
   include?: FilterPattern
+  formatFilePath?: (file: string) => undefined | string
 }

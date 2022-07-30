@@ -24,14 +24,14 @@ const copyFiles = (_opt?: ConfigOptions): PluginOption => {
       const filter = createFilter(include, exclude)
       if (!filter(id))
         return
-      // TODO
       maps.set(id, code)
       return code
     },
     generateBundle() {
       maps.forEach((code, id) => {
         // 获取目录的信息
-        const filename = id.replace(sourceDir, '').substring(1)
+        let filename = id.replace(sourceDir, '').substring(1)
+        filename = _opt?.formatFilePath?.(filename) || filename
         this.emitFile({
           type: 'asset',
           fileName: filename,
