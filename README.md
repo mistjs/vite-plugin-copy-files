@@ -24,7 +24,7 @@ import copyFiles from 'vite-plugin-copy-files'
 export default {
   plugins: [copyFiles({
     include: [/\.(less|css|scss)$/],
-    exclde: [/node_modules/],
+    exclude: [/node_modules/],
   })],
 }
 ```
